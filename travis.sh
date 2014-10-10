@@ -1,4 +1,4 @@
-#!/usr/env bash
+#!/usr/bin/env bash
 
 mkdir dist
 echo date > dist/date.txt
