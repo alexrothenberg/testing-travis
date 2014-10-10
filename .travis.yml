@@ -1,9 +1,9 @@
 language: bash
 script: bash travis.sh
 deploy:
-  - provider: releases
-    secure: ACzf32cNubpdbxZdM9XsAGBBJZEmTtbnAZPk2i/niVZweqayTdWMe7XvAtpG5hAlLHSX33PnGkanqd+GEVCDV4xgNt1mO3w957W2Cikpf7SMzJ3xMP7IGvhIeTkILS0md80klvWJ/N7Pt2woQHCA58TWC2KjdNg+/jOk0TLvs6A=
-    file: dist/date.txt
-    skip_cleanup: true
-    on:
-      branch: master
+  provider: releases
+  secure: ACzf32cNubpdbxZdM9XsAGBBJZEmTtbnAZPk2i/niVZweqayTdWMe7XvAtpG5hAlLHSX33PnGkanqd+GEVCDV4xgNt1mO3w957W2Cikpf7SMzJ3xMP7IGvhIeTkILS0md80klvWJ/N7Pt2woQHCA58TWC2KjdNg+/jOk0TLvs6A=
+  file: dist/date.txt
+  skip_cleanup: true
+  on:
+    branch: master
