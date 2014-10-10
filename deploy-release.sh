@@ -2,7 +2,7 @@
 
 echo $TRAVIS_BRANCH
 
-if [ $TRAVIS_BRANCH -eq 'master' ]
+if [ $TRAVIS_BRANCH = "master" ]
 then
   (
     git clone "https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}" artifacts
