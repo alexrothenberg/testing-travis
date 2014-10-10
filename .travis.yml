@@ -1,3 +1,6 @@
 language: bash
 script: "./travis.sh"
-after_success: ./deploy-release.sh
+after_success: "./deploy-release.sh"
+env:
+  global:
+  - secure: QP0SjQc+UTUqI0+PVHJUEz/42Pv3cBEPgPWFDR2DCkIT3yrQQMMYQHCnmMjywRZRC2unG0xmpU8e2rMk4bkOiOpq7Npq9C/HoctTrHTeTogDoo4JB/yVRkJnm4sTMMhwE6GDDfrCr+N6Q/+/6sYX+Yw6uSZGc+JBOplQ2gXct8I=
