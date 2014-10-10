@@ -1,12 +1,6 @@
 language: bash
 script: "./travis.sh"
-deploy:
-  provider: releases
-  api_key:
-    secure: F3QdzwoAYVGLtScqgtgQByo8qNepcjQyOWaFDhL/ZzLIRpMG+UYuB8gaqk0PKas9r2J4oumehM40+I1kZhobK+bITlHs8MSk3k8jEyH1gXz0Di01WUeLEMfrJJkWmSFVP/5CCO0NavaQEgHOkYU2iO0V2vKZWvXSB9rtXgf60R0=
-  file_glob: true
-  file: dist/*
-  skip_cleanup: true
-  on:
-    repo: alexrothenberg/testing-travis
-    branch: master
+after_success: "./deploy-release.sh"
+env:
+  global:
+  - secure: QP0SjQc+UTUqI0+PVHJUEz/42Pv3cBEPgPWFDR2DCkIT3yrQQMMYQHCnmMjywRZRC2unG0xmpU8e2rMk4bkOiOpq7Npq9C/HoctTrHTeTogDoo4JB/yVRkJnm4sTMMhwE6GDDfrCr+N6Q/+/6sYX+Yw6uSZGc+JBOplQ2gXct8I=
