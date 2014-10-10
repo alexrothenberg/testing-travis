@@ -14,7 +14,9 @@ then
     git config user.name "Travis-CI"
     git config user.email "travis@example.com"
     git add .
-    git commit -m "Successful build ${TRAVIS_BUILD_NUMBER}  [Skip CI]\n\nhttps://travis-ci.org/${TRAVIS_REPO_SLUG}/builds/${TRAVIS_BUILD_ID}"
+    git commit -m "Successful build ${TRAVIS_BUILD_NUMBER}  [Skip CI]
+
+https://travis-ci.org/${TRAVIS_REPO_SLUG}/builds/${TRAVIS_BUILD_ID}"
     git push --quiet origin artifacts > /dev/null 2>&1
   )
 else
